@@ -8,7 +8,6 @@ export function MovieDataComponent() {
   let movies = useAtomValue(moviesAtoms);
   const selectedMovie = useAtomValue(movieResultAtom);
   if(selectedMovie) {
-    console.log(selectedMovie);
     movies = [...movies, selectedMovie];
   }
   console.log(movies);
